@@ -1,14 +1,23 @@
-﻿
+﻿Console.WriteLine("Please enter a number between 1 and 50");
+string input = Console.ReadLine();
 
-
-namespace task1
+if (int.TryParse(input, out int number))
 {
-    class Program
+    if (number >= 1 && number <= 50)
     {
-        static void Main(string[] args)
-        {
-            int mynumber = 0;
+        Console.WriteLine("Valid number");
+    }
+    else
+    {
+        Console.WriteLine("Invalid number");
+    }
+}
+else
+{
+    Console.WriteLine("Invalid input");
+}
 
-            Console.WriteLine("Hi!");
-
-}   }   }  
+if (number % 2 == 0 || 3 == 0) ;
+{
+    Console.WriteLine("Success!");
+}
